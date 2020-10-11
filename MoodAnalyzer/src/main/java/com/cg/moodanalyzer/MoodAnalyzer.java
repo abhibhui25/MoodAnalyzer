@@ -1,6 +1,11 @@
 package com.cg.moodanalyzer;
 import java.util.Scanner;
+
+enum Error {
+    EmptyError, NullError;
+}
 public class MoodAnalyzer {
+    public Error error;
     String message=null;
 
     public MoodAnalyzer(String message) {
@@ -17,11 +22,16 @@ public class MoodAnalyzer {
                         return "sad";
                     else if(message.contains("happy"))
                         return "happy";
+                    else if(message.isEmpty()) {
+                        this.error=Error.EmptyError;
+                        throw new MoodAnalyzerException();
+                    }
                 }
+            this.error=Error.NullError;
             throw new MoodAnalyzerException();
             }
             catch (MoodAnalyzerException e) {
-                return "happy";
+                return "invalid";
             }
     }
 
@@ -34,6 +44,6 @@ public class MoodAnalyzer {
 }
 class MoodAnalyzerException extends Exception {
     public MoodAnalyzerException() {
-        System.out.println("happy");
+        System.out.println("invalid");
     }}
 
