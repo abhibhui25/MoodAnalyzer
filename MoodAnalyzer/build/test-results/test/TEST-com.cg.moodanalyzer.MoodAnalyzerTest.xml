@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.moodanalyzer.MoodAnalyzerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-10-11T14:58:57" hostname="LAPTOP-9CGGNV1K" time="0.004">
+<testsuite name="com.cg.moodanalyzer.MoodAnalyzerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-10-11T15:09:53" hostname="LAPTOP-9CGGNV1K" time="0.003">
   <properties/>
-  <testcase name="givenMessage_WhenSadShouldReturnSad" classname="com.cg.moodanalyzer.MoodAnalyzerTest" time="0.004"/>
+  <testcase name="givenMessage_WhenSadShouldReturnSad" classname="com.cg.moodanalyzer.MoodAnalyzerTest" time="0.002"/>
   <testcase name="givenMessage_WhenNotSadShouldReturnHappy" classname="com.cg.moodanalyzer.MoodAnalyzerTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
